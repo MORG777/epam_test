@@ -1,0 +1,38 @@
+<h1>{{title}} книги</h1>
+<form method="post" action="javascript:void(0)" ng-submit="SendBook();">
+    <div class="row">
+        <div class="col-2 text-right">
+            <label for="book-title">Название книги</label>
+        </div>
+        <div class="col-8">
+            <input name="title" id="book-title" ng-model="item.title" type="text" required class="form-field" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 text-right">
+            <label for="book-author">Автор книги</label>
+        </div>
+        <div class="col-8">
+            <input name="author" id="book-author" ng-model="item.author" type="text" required class="form-field" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 text-right">
+            <label for="book-year">Год</label>
+        </div>
+        <div class="col-1">
+            <input name="year" type="number" id="book-year" ng-model="item.year" max="2017" min="1914" required class="form-field" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 text-right">
+            <label for="book-image">Изображение</label>
+        </div>
+        <div class="col-8 text-right">
+            <input type="text" id="book-image" ng-model="item.image" required class="form-field" />
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="index.html" class="btn btn-big">Отмена</a>  <input class="btn btn-add btn-big" type="submit" title="Сохранить" />
+    </div>
+</form>

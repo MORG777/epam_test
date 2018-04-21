@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Книжная полка</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/style.css" rel="stylesheet" media="all">
+    </head>
+    <body id="epam-app" ng-app="epam-app">
+        <div id="main">
+            <header>
+                <div class="content">
+                    <a href="javascript:void(0)" ui-sref="index" class="logo">Книжная полка</a>
+                    <div class="links">
+                        <a href="javascript:void(0)" ui-sref="index">главная</a> | 
+                        <a href="javascript:void(0)" ui-sref="add"><i class="fa fa-plus"></i> добавить</a>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="content" ui-view></div>
+            </section>
+            <footer>
+                <div class="content">
+                    &copy; Copyrights 2018
+                </div>
+            </footer>
+        </div>
+        <!-- libs -->
+        <script type="text/javascript" src="/js/lib/angular.min.js"></script>
+        <script type="text/javascript" src="/js/lib/angular-ui-routing.min.js"></script>
+        <script type="text/javascript" src="/js/app/Data.js"></script>
+        <!-- application -->
+        <script type="text/javascript" src="/js/app/ng-app/IndexController.js"></script>
+        <script type="text/javascript" src="/js/app/ng-app/EditController.js"></script>
+        <script type="text/javascript" src="/js/app/ng-app/ng-app.init.js"></script>
+    </body>
+</html>

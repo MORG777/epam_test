@@ -1,0 +1,25 @@
+form{margin:10px 0; padding:0}
+    form .form-field{
+        line-height:22px;
+        width:100%;
+        padding:2px 5px;
+        border:1px #cdcdcd solid;
+        border-radius:3px;
+    }
+    form fieldset{
+        margin:0;
+        padding:0;
+        display:block;
+        width:100%;
+    }
+    form fieldset.row{
+        clear:both;
+        display: flex;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+    }
+    form label{
+        font-size:14px;
+        line-height:26px;
+    }

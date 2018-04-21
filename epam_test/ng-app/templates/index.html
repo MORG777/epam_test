@@ -1,0 +1,15 @@
+<h1>Книжная полка</h1>
+
+<div ng-repeat="item in books | orderBy : 'id'" class="row book-item-row">
+    <div class="col-2 text-center">
+        <img src="{{item.image}}" title="{{item.title}}" alt="{{item.title}}" />
+    </div>
+    <div class="col-7">
+        <h3>{{item.title}}<i class="year">({{item.year}})</i></h3>
+        <h4>{{item.author}}</h4>
+    </div>
+    <div class="col-3 text-right">
+        <a href="javascript:void(0)" ui-sref="edit({id:item.id})" class="btn btn-edit">редактировать</a>
+        <a href="javascript:void(0)" ng-click="DeleteBook(item.id)" class="btn btn-delete">удалить</a>
+    </div>
+</div>    
